@@ -118,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Sin título.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -140,10 +138,10 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "9902e9345ff72556",
+  "active": "99d2fd5a7326ada2",
   "lastOpenFiles": [
-    "index.md",
     "Sin título.md",
+    "index.md",
     "Welcome.md"
   ]
 }
