@@ -56,3 +56,4 @@
     Para poder descargarla pincha en `Enviar e Imprimir`. Saltará una ventana en la que te dirá que registres al cliente en el ERP, si no has seleccionado uno de los importados, añade el correo y guárdalo.  
     Saltará una ventana, dónde nos dará la posibilidad de imprimir la factura, enviarla por correo postal o por correo electrónico. Yo solo seleccionaré la opción de `Imprimir`, ya que solo quiero descargarla.  
     Una vez hecho esto se abrirá una ventana nueva con la factura y, si no se ha descargado automáticamente, la descargamos y ya tendremos nuestra factura de prueba.  
+[Enlace a la factura](./INV_2024_00001-1.pdf)
