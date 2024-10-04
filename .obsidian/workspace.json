@@ -4,17 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "90c065388474a6db",
+        "id": "d35b0972a114fbec",
         "type": "tabs",
         "children": [
           {
-            "id": "99d2fd5a7326ada2",
+            "id": "a9b7759006f00646",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "index.md",
-                "mode": "source",
+                "file": "ut03/pr0302/index.md",
+                "mode": "preview",
                 "source": false
               }
             }
@@ -85,7 +85,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "index.md",
+                "file": "ut03/pr0302/index.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +102,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "index.md",
+                "file": "ut03/pr0302/index.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +125,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "index.md"
+                "file": "ut03/pr0302/index.md"
               }
             }
           }
@@ -146,10 +146,23 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "99d2fd5a7326ada2",
+  "active": "a9b7759006f00646",
   "lastOpenFiles": [
-    "ut02/index.md",
+    "ut03/pr0302/libro5.png",
+    "ut03/pr0302/libro4.png",
+    "ut03/pr0302/libro3.png",
+    "ut03/pr0302/libro2.png",
+    "ut03/pr0302/libro1.png",
+    "ut03/pr0302/libros.xls",
+    "ut03/pr0302/index.md",
+    "ut03/pr0302",
+    "ut03/pr0301/INV_2024_00001-1.pdf",
+    "ut03/pr0301/index.md",
+    "ut03/index.md",
     "index.md",
+    "ut02/index.md",
+    "ut03",
+    "ut03/pr0301",
     "ut02",
     "Sin título.md",
     "Welcome.md"
