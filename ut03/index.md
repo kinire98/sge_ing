@@ -1,3 +1,3 @@
 # Enlaces a prácticas
-[PR0301](./pr0301/index.md)
+[PR0301](./pr0301/index.md)  
 [PR0302](./pr0302/index.md)

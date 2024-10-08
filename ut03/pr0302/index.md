@@ -4,7 +4,7 @@ Para integrar la búsqueda de imágenes de Google en Odoo hay que realizar los s
 2. Buscamos el módulo Inventario y pinchamos `Activar`
 3. Esperamos un poco y nos llevará al módulo de comunicación. Pinchamos en el menú de arriba a la izquierda y vamos a `Inventario`
 4. Una vez en `Inventario` en la barra superior pinchamos en `Productos`>`Productos` 
-5. Ahora vamos a importar unos productos ya hechos desde un archivo `.xls` (también es posible hacerlo con `.csv`). Sin embargo, en este formato no es posible adjuntar imágenes, por eso vamos a activar la búsqueda de Google. El archivo que voy a utilizar es [libros.xsl](./libros.xsl).  
+5. Ahora vamos a importar unos productos ya hechos desde un archivo `.xls` (también es posible hacerlo con `.csv`). Sin embargo, en este formato no es posible adjuntar imágenes, por eso vamos a activar la búsqueda de Google. El archivo que voy a utilizar es [libros.xls](./libros.xls).  
    Una vez descargado en la pantalla de productos de odoo pinchamos en `Favoritos`>`Importar registros`. En la siguiente pantalla que se abre podemos descargar la plantilla para poder importar los registros de productos necesarios. Como ya tenemos el archivo simplemente vamos a darle al botón `Subir archivo` y seleccionamos el archivo a importar. Una vez seleccionado, tenemos que hacer cuadrar los campos del excel con campos de Odoo.  
    Cuando hayamos hecho esto, pinchamos en `Importar` (Desmarcar la opción de imagen, ya que las vamos a cargar desde la API de Google).
 6. Para activar el módulo de *Google Progamable Search* vamos a [console.cloud.google.com](https://console.cloud.google.com).  
