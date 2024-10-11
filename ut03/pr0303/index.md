@@ -5,7 +5,7 @@ Distintas formas de hacer copias de seguridad en Odoo
 		`docker compose up` (si no los hemos creado todavía)
 		o
 		`docker compose start` (si ya los hemos creado)
-2. Una vez levantados tenemos que entrar en el contenedor de la base de datos para poder hacer la copia de seguridad:
+2. Una vez levantados tenemos que entrar en el contenedor de la base de datos para poder hacer la copia de seguridad:  
 		`docker compose exec [nombre del contenedor] bash`
 3. Dentro del contenedor, para que el archivo de copia se borre una vez apagado el contenedor vamos a la carpeta `/tmp`.  
    Dentro de la carpeta tenemos que primero parar el servicio de postgres con:  
