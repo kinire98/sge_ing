@@ -26,8 +26,8 @@ Para integrar la búsqueda de imágenes de Google en Odoo hay que realizar los s
 	Una vez hecho esto, pincha en `Guardar`
 9. Volvemos al módulo de `Inventario` a la sección `Productos`. Cambia a la vista de lista. Selecciona los productos para los que quieras encontrar imagen. Pincha en `Acción`>`Obtener imágenes de Google Imágenes`.  
    Se abrirá un cuadro que nos dirá cuántos productos hemos seleccionado y nos recordará que las imágenes puede que tengan derechos de autor y que no deberíamos publicarlas en nuestro sitio web. Pincha en `Obtener imágenes` para que empiece a generar y ya estará listo.
-![Primer libro](./libro1.png)
-![Segundo libro](./libro2.png)
-![Tercer libro](./libro3.png)
-![Cuarto libro](./libro4.png)
-![Quinto libro](./libro5.png)
+![Primer libro](libro1.png)
+![Segundo libro](libro2.png)
+![Tercer libro](libro3.png)
+![Cuarto libro](libro4.png)
+![Quinto libro](libro5.png)
