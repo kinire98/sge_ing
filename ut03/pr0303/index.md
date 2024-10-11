@@ -54,13 +54,13 @@ Distintas formas de hacer copias de seguridad en Odoo
 En este ejercicio haremos y restauraremos una copia de seguridad desde la interfaz gráfica:
 1. Vamos a la URL `localhost:8069/web/database/manager`. Aparecerá una pantalla cómo esta:
 ![Database manager Odoo](./img/databaseManager.png)
-2. Aquí puede haber más de una base de datos, la que nos importa a nosotros en este caso es la que se llama `odoo`. Pincha en `Backup` o el equivalente. Saldrá el siguiente recuadro:
+2. Aquí puede haber más de una base de datos, la que nos importa a nosotros en este caso es la que se llama `odoo`. Pincha en `Backup` o el equivalente. Saldrá el siguiente recuadro:  
 ![](./img/backup.png)
 Pon la contraseña maestra que estableciste para la base de datos (cómo la reestablecimos directamente en Postgres, la contraseña no se ha generado, así que lo que pongas se convertirá en la contraseña maestra) y en backup format selecciona la opción zip y dale a `Backup`.
 3. Ahora borra la base de datos pinchando en `Delete`. Te preguntará por la contraseña maestra, escríbela y dale a `Delete`. Volverás a la página de creación de la base de datos para Odoo:
 ![Creación inicial de bases de datos para Odoo](./img/creationDatabase.png)
 4. Aquí en lugar de rellenar los datos pinchamos en `or restore a database`. Saldrá el siguiente recuadro:
-![Restaurar base de datos](./img/restoreDatabase.png)
+![Restaurar base de datos](./img/restoreDatabase.png)  
 	Tendrás que escribir lo siguiente:
    1.  Contraseña maestra: La contraseña que escribiste antes
    2. Archivo: El archivo que se descargó tras hacer la copia
