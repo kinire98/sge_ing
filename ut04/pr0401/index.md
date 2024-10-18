@@ -54,7 +54,8 @@ print("Numero mas pequeño introducido: " + str(menor))
 ```
 ## Ejercicio 6
 ```python
-valores_validos = ["mm", "cm", "dm", "m", "dam", "hm", "km"]
+valores_validos = ["mm", "cm", "dm", "m", "dam", "hm", "km"]4
+
 
 cantidad = int(input("Introduce una cantidad para convertir: "))
 
@@ -196,6 +197,13 @@ match (opcion, randint(0, 4)):
         print("Pierdes")
     
 ```
-## Ejercicio 3
+## Ejercicio 9
 ```python
+n =  int(input("Introduce el numero para la secuencia de fibonacci: "))
+
+a, b = 0, 1
+for _ in range(n):
+    a, b = b, a + b
+
+print(a)
 ```
