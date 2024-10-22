@@ -8,3 +8,4 @@ while (not adivinado==numero_a_adivinar):
         print("El numero que has introducido es menor que el que tienes que adivinar")
     adivinado = int(input("Adivina el numero: "))
 print("Adivinaste el numero")
+
