@@ -155,3 +155,54 @@ for i in string:
 result += cur_let * int(app)
 print(result)
 ```
+## Ejercicio 14
+```python
+```
+## Ejercicio 15
+```python
+string1 = input("Introduce una cadena: ")
+string2 = input("Introduce una segunda cadena: ")
+
+string1_ord = 0
+string2_ord = 0
+
+for i in string1:
+    string1_ord += ord(i)
+for i in string2:
+    string2_ord += ord(i)
+
+if string1_ord > string2_ord:
+    print("La primera cadena tiene un mayor valor total")
+elif string1_ord < string2_ord:
+    print("La segunda cadena tiene un mayor valor total")
+else:
+    print("Las dos cadenas tienen el mismo valor")
+```
+## Ejercicio 16
+```python
+string = input("Introduce una serie de palabras: ")
+max_length = 0
+for i in string.split():
+    max_length = max(max_length, len(i))
+print(max_length)
+```
+## Ejercicio 17
+```python
+cadena_nums = input("Introduce un numero: ")
+result = ""
+counter = 0
+for i in range(len(cadena_nums) - 1, -1, -1):
+    result = cadena_nums[i] + result
+    counter += 1
+    if counter == 3:
+        result = "." + result
+        counter = 0
+print(result)
+```
+## Ejercicio 18
+```python
+string = input("Introduce la cadena a rotar: ")
+num_rot = int(input("Introduce el numero de veces a rotar la cadena: "))
+num_rot = num_rot % len(string) # modulo para cuando se introduzca un numero mas grande que la cadena solo quede el numero de rotaciones reales
+print(string[num_rot:] + string[:num_rot])
+```
