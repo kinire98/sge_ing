@@ -88,7 +88,12 @@ print(f'Son anagramas: {'Si' if anagrama(primera_cadena, segunda_cadena) else 'N
 ```
 ## Ejercicio 9
 ```python
-
+def frecuencia_caracteres(string: str) -> dict:
+    dictionary = {}
+    for c in string:
+        dictionary[c] = dictionary.get(c, 0) + 1
+    return dictionary
+print(frecuencia_caracteres(input("Introduce una cadena para saber la frecuencia de caracteres: ")))
 ```
 ## Ejercicio 10 
 ```python
@@ -157,6 +162,14 @@ print(result)
 ```
 ## Ejercicio 14
 ```python
+def replace_str(string: str, dictionary: dict) -> str:
+    words = string.split(" ")
+    for i in range(len(words)):
+        if words[i][0] == "{" and words[i][-1] == "}":
+            final_idx = len(words[i]) - 1
+            words[i] = dictionary.get(words[i][1:final_idx], "")
+    return " ".join(words)
+print(replace_str("Hola, {nombre}", {"nombre": "Alba"}))
 ```
 ## Ejercicio 15
 ```python
