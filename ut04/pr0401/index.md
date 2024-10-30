@@ -54,7 +54,7 @@ print("Numero mas pequeño introducido: " + str(menor))
 ```
 ## Ejercicio 6
 ```python
-valores_validos = ["mm", "cm", "dm", "m", "dam", "hm", "km"]4
+valores_validos = ["mm", "cm", "dm", "m", "dam", "hm", "km"]
 
 
 cantidad = int(input("Introduce una cantidad para convertir: "))

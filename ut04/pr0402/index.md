@@ -1,4 +1,6 @@
+# Ejercicios cadenas
 ## Ejercicio 1
+### Contar vocales y consonantes
 ```python
 cadena = input("Introduce una cadena: ")
 consonantes = 0
@@ -31,20 +33,24 @@ print(f'Numero de consonantes: {consonantes}')
 print(f'Numero de vocales: {vocales}')
 ```
 ## Ejercicio 2
+### Invertir una cadena
 ```python
 print(input("Introduce una cadena: ")[::-1])
 ```
 ## Ejercicio 3
+### Verificar palíndromo
 ```python
 cadena = input("Introduce la cadena para verificar si es un palindromo: ").lower()
 print(f"Es palindromo: {"Si" if cadena == cadena[::-1] else "No"}")
 ```
 ## Ejercicio 4
+### Contar palabras
 ```python
 def contar_palabra(cadena: str): print(f'La longitud es: {len(cadena.split())}')
 contar_palabra(input("Introduce una frase para contar las palabras: "))
 ```
 ## Ejercicio 5
+### Eliminar caracteres repetidos
 ```python
 cadena = input("Introduce la cadena para quitar caracteres repetidos: ")
 cadena_sin_repetidos = ""
@@ -54,6 +60,7 @@ for c in cadena:
 print(cadena_sin_repetidos)
 ```
 ## Ejercicio 6
+### Mayúsculas y minúsculas 
 ```python
 cadena = input("Introduce la cadena: ")
 
@@ -72,10 +79,12 @@ for i in cadena:
 print(cadena_result)
 ```
 ## Ejercicio 7
+### Invertir palabras de una cadena
 ```python
 print(" ".join(input("Introduce una frase: ").split(" ")[::-1]))
 ```
 ## Ejercicio 8
+### Anagrama
 ```python
 primera_cadena = input("Introduce la primera cadena: ")
 segunda_cadena = input("Introduce la segunda cadena: ")
@@ -87,6 +96,7 @@ def anagrama(str1: str, str2: str) -> bool:
 print(f'Son anagramas: {'Si' if anagrama(primera_cadena, segunda_cadena) else 'No'}')
 ```
 ## Ejercicio 9
+### Frecuencia de caracteres
 ```python
 def frecuencia_caracteres(string: str) -> dict:
     dictionary = {}
@@ -96,6 +106,7 @@ def frecuencia_caracteres(string: str) -> dict:
 print(frecuencia_caracteres(input("Introduce una cadena para saber la frecuencia de caracteres: ")))
 ```
 ## Ejercicio 10 
+### Quitar caracteres alfanuméricos
 ```python
 string = input("Introduce la cadena: ")
 result_string = ""
@@ -105,6 +116,7 @@ for i in string:
 print(result_string)
 ```
 ## Ejercicio 11
+### Transformar a camelCase
 ```python
 string = input("Introduce la cadena: ")
 camelCase = ""
@@ -122,6 +134,7 @@ for i in string:
 print(camelCase)
 ```
 ## Ejercicio 12
+### Codificación RLE (Run-Length Encoding)
 ```python
 string = input("Introduce la cadena: ")
 result = ""
@@ -142,6 +155,7 @@ result += cur_let + str(app)
 print(result)
 ```
 ## Ejercicio 13
+### Decodificar RLE
 ```python
 string = input("Introduce la cadena codificada con rle: ")
 result = ""
@@ -161,6 +175,7 @@ result += cur_let * int(app)
 print(result)
 ```
 ## Ejercicio 14
+### Formateo de cadenas con plantillas
 ```python
 def replace_str(string: str, dictionary: dict) -> str:
     words = string.split(" ")
@@ -172,6 +187,7 @@ def replace_str(string: str, dictionary: dict) -> str:
 print(replace_str("Hola, {nombre}", {"nombre": "Alba"}))
 ```
 ## Ejercicio 15
+### Comparar cadenas por valor ASCII
 ```python
 string1 = input("Introduce una cadena: ")
 string2 = input("Introduce una segunda cadena: ")
@@ -192,6 +208,7 @@ else:
     print("Las dos cadenas tienen el mismo valor")
 ```
 ## Ejercicio 16
+### Contar la longitud de palabra más larga
 ```python
 string = input("Introduce una serie de palabras: ")
 max_length = 0
@@ -200,6 +217,7 @@ for i in string.split():
 print(max_length)
 ```
 ## Ejercicio 17
+### Formatear número con separador de miles
 ```python
 cadena_nums = input("Introduce un numero: ")
 result = ""
@@ -213,6 +231,7 @@ for i in range(len(cadena_nums) - 1, -1, -1):
 print(result)
 ```
 ## Ejercicio 18
+### Rotar caracteres de una cadena
 ```python
 string = input("Introduce la cadena a rotar: ")
 num_rot = int(input("Introduce el numero de veces a rotar la cadena: "))
