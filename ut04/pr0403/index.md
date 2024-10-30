@@ -1,6 +1,8 @@
 # Ejercicios listas
 
-	Nota: Del ejercicio 1 al 8 se utilizará la misma lista de cadenas. Por lo tanto no se incluirá en los ejemplos, por brevedad. La dejo debajo:  
+	Nota: Del ejercicio 1 al 8 se utilizará la misma lista de cadenas.  
+	Por lo tanto no se incluirá en los ejemplos, por brevedad.  
+	La dejo debajo:  
 
 
 ```python
