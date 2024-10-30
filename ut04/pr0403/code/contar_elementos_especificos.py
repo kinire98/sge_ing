@@ -1,3 +1,5 @@
 palabra = input("Introduce una palabra: ")
-palabras = open("./palabras.txt").readline().split(" ")[:-1]
+file = open("./palabras.txt", "r")
+palabras = file.readline().split(" ")[:-1]
+file.close()
 print(len([i for i in palabras if i == palabra]))

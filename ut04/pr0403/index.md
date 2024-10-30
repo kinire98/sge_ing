@@ -90,6 +90,9 @@ print(f"Suma elementos: {sum(numeros)}")
 ### Contar elementos específicos
 ```python
 palabra = input("Introduce una palabra: ")
-palabras = open("./palabras.txt").readline().split(" ")[:-1] # Se cargan las palabras de un archivo y se quita la ultima por contener un salto de linea
+file = open("./palabras.txt", "r")
+palabras = file.readline().split(" ")[:-1] # Se cargan las palabras de un archivo y se quita la ultima por contener un salto de linea
+file.close()
 print(len([i for i in palabras if i == palabra]))
+
 ```
