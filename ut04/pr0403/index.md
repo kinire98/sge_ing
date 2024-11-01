@@ -98,5 +98,103 @@ file = open("./palabras.txt", "r")
 palabras = file.readline().split(" ")[:-1] # Se cargan las palabras de un archivo y se quita la ultima por contener un salto de linea
 file.close()
 print(len([i for i in palabras if i == palabra]))
-
+```
+## Ejercicio 11
+### Eliminar duplicados de lista
+```python
+import random
+numeros = []
+for i in range(100_000):
+    numeros.append(random.randint(0, 150))
+numeros_sin_duplicados = []
+numeros_ya_introducidos = dict()
+for i in numeros:
+    num = numeros_ya_introducidos.get(i, 0)
+    if num == 0:
+        numeros_sin_duplicados.append(i)
+        numeros_ya_introducidos[i] = 1
+numeros_sin_duplicados.sort()
+print(numeros_sin_duplicados)
+print(len(numeros_sin_duplicados)) #151 -> de 0 a 150 hay 151 elementos distintos
+```
+## Ejercicio 12
+### Máximo y mínimo
+```python
+import random
+numeros = []
+for i in range(100_000):
+    numeros.append(random.randint(0, 200_000_000))
+print(f"Max: {max(numeros)}")
+print(f"Min: {min(numeros)}")
+```
+## Ejercicio 13
+### Filtrar números pares
+```python
+import random
+numeros = []
+for i in range(100_000):
+    numeros.append(random.randint(0, 150))
+print([
+    i for i in numeros if i & 1 == 0
+    ])
+```
+## Ejercicio 14
+## Revertir una lista sin `.reverse()`
+```python
+import random
+numeros = []
+for i in range(100):
+    numeros.append(random.randint(0, 150))
+nueva_lista = numeros[::-1]
+numeros[0] = numeros[0] * 2
+print(numeros) # La primera posición estará duplicada
+print(nueva_lista) # La primera posición NO estará duplicada
+```
+## Ejercicio 15
+### Concatenar listas
+```python
+def concat_lists(list1: list, list2: list) -> list:
+    return list1 + list2
+print(concat_lists([1, 2, 3], [3, 2, 1]))
+```
+## Ejercicio 16
+### Devolver unión listas
+```python
+import random
+numeros = []
+numeros2 = []
+for i in range(100):
+    numeros.append(random.randint(0, 150))
+    numeros2.append(random.randint(0, 150))
+def union_listas(list1: list, list2: list) -> list:
+    elements = dict()
+    union = []
+    for i in list1:
+        elements[i] = 1
+    for i in list2:
+        if elements.get(i, 0) == 1:
+            union.append(i);
+    return union
+print(union_listas(numeros, numeros2))
+```
+## Ejercicio 17
+### Dividir una lista
+```python
+import random
+numeros = []
+for i in range(100):
+    numeros.append(random.randint(0, 150))
+media = sum(numeros) / len(numeros)
+debajo_media = []
+encima_media = []
+for i in numeros:
+    if i <= media:
+        debajo_media.append(i)
+        continue
+    encima_media.append(i)
+debajo_media.sort()
+encima_media.sort()
+print(f"Media: {media}")
+print(f"Por debajo de la media: {debajo_media}")
+print(f"Por encima de la media: {encima_media}")
 ```

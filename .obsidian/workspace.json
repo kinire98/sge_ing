@@ -77,7 +77,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "bd992e8a8a8bab74",
@@ -164,17 +165,17 @@
   },
   "active": "5757b03aa605db01",
   "lastOpenFiles": [
-    "ut04/pr0403/code/contar_elementos_especificos.py~",
-    "ut04/pr0403/code/palabras.txt~",
-    "ut04/pr0403/code/palabras.txt",
-    "ut04/pr0403/code/contar_elementos_especificos.py",
-    "ut04/pr0403/code/sumar_elementos_lista.py~",
-    "ut04/pr0403/code/sumar_elementos_lista.py",
-    "ut04/pr0403/code/numero_letras.py",
-    "ut04/pr0403/code/numero_vocales.py~",
-    "ut04/pr0403/code/numero_vocales.py",
-    "ut04/pr0403/code/nombres_cortos.py~",
-    "ut04/pr0403/code/nombres_cortos.py",
+    "ut04/pr0403/code/dividir_lista.py~",
+    "ut04/pr0403/code/dividir_lista.py",
+    "ut04/pr0403/code/union_listas.py~",
+    "ut04/pr0403/code/union_listas.py",
+    "ut04/pr0403/code/concatenar_listas.py~",
+    "ut04/pr0403/code/concatenar_listas.py",
+    "ut04/pr0403/code/revertir_lista.py~",
+    "ut04/pr0403/code/revertir_lista.py",
+    "ut04/pr0403/code/filtrar_numeros_pares.py~",
+    "ut04/pr0403/code/filtrar_numeros_pares.py",
+    "ut04/pr0403/code/maximo_minimo.py~",
     "ut04/pr0402/index.md",
     "ut04/pr0403/index.md",
     "ut04/pr0401/index.md",
