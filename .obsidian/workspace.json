@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "f66eece5e412b4d3",
+        "id": "e9759b28b993c90c",
         "type": "tabs",
         "children": [
           {
-            "id": "5757b03aa605db01",
+            "id": "56c9b48d36e4793e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ut04/pr0403/index.md",
+                "file": "ut04/pr0404/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -163,21 +163,22 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "5757b03aa605db01",
+  "active": "56c9b48d36e4793e",
   "lastOpenFiles": [
-    "ut04/pr0403/code/dividir_lista.py~",
-    "ut04/pr0403/code/dividir_lista.py",
-    "ut04/pr0403/code/union_listas.py~",
-    "ut04/pr0403/code/union_listas.py",
-    "ut04/pr0403/code/concatenar_listas.py~",
-    "ut04/pr0403/code/concatenar_listas.py",
-    "ut04/pr0403/code/revertir_lista.py~",
-    "ut04/pr0403/code/revertir_lista.py",
-    "ut04/pr0403/code/filtrar_numeros_pares.py~",
-    "ut04/pr0403/code/filtrar_numeros_pares.py",
-    "ut04/pr0403/code/maximo_minimo.py~",
-    "ut04/pr0402/index.md",
+    "ut04/pr0404/code/transformacion_de_datos.py~",
+    "ut04/pr0404/code/transformacion_de_datos.py",
+    "ut04/pr0404/code/anidacion_de_diccionarios.py~",
+    "ut04/pr0404/code/anidacion_de_diccionarios.py",
+    "ut04/pr0404/code/filtrar_claves_y_valores.py~",
+    "ut04/pr0404/code/filtrar_claves_y_valores.py",
+    "ut04/pr0404/code/combinar_diccionarios.py~",
+    "ut04/pr0404/code/combinar_diccionarios.py",
+    "ut04/pr0404/code/diccionario_invertido.py~",
+    "ut04/pr0404/code/diccionario_invertido.py",
+    "ut04/pr0404/code/diccionario_de_listas.py~",
     "ut04/pr0403/index.md",
+    "ut04/pr0404/index.md",
+    "ut04/pr0402/index.md",
     "ut04/pr0401/index.md",
     "ut04/index.md",
     "index.md",
