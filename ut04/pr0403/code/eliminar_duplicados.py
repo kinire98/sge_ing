@@ -13,3 +13,6 @@ numeros_sin_duplicados.sort()
 print(numeros_sin_duplicados)
 print(len(numeros_sin_duplicados))
 
+
+# Mejor solucion
+print(list(set(numeros)))

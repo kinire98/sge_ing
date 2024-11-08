@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "e9759b28b993c90c",
+        "id": "78632abba381f2c8",
         "type": "tabs",
         "children": [
           {
-            "id": "56c9b48d36e4793e",
+            "id": "5be4195d8d066c5b",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ut04/pr0404/index.md",
+                "file": "ut04/pr0403/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -77,8 +77,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "bd992e8a8a8bab74",
@@ -163,24 +162,24 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "56c9b48d36e4793e",
+  "active": "5be4195d8d066c5b",
   "lastOpenFiles": [
-    "ut04/pr0404/code/transformacion_de_datos.py~",
-    "ut04/pr0404/code/transformacion_de_datos.py",
-    "ut04/pr0404/code/anidacion_de_diccionarios.py~",
-    "ut04/pr0404/code/anidacion_de_diccionarios.py",
-    "ut04/pr0404/code/filtrar_claves_y_valores.py~",
-    "ut04/pr0404/code/filtrar_claves_y_valores.py",
-    "ut04/pr0404/code/combinar_diccionarios.py~",
-    "ut04/pr0404/code/combinar_diccionarios.py",
-    "ut04/pr0404/code/diccionario_invertido.py~",
-    "ut04/pr0404/code/diccionario_invertido.py",
-    "ut04/pr0404/code/diccionario_de_listas.py~",
-    "ut04/pr0403/index.md",
+    "ut04/pr0403/code/concatenar_listas.py~",
+    "ut04/pr0405/index.md",
     "ut04/pr0404/index.md",
+    "ut04/pr0405/code/producto_cartesiano.py~",
+    "ut04/pr0405/code/producto_cartesiano.py",
+    "ut04/pr0405/code/concatenacion_listas.py~",
+    "ut04/pr0405/code/concatenacion_listas.py",
+    "ut04/pr0405/code/palabras_por_longitud.py~",
+    "ut04/pr0405/code/palabras_por_longitud.py",
+    "ut04/pr0405/code/interseccion_de_conjuntos.py~",
+    "ut04/pr0405/code/interseccion_de_conjuntos.py",
+    "ut04/pr0405/code/frecuencia_de_palabras.py~",
+    "ut04/index.md",
+    "ut04/pr0403/index.md",
     "ut04/pr0402/index.md",
     "ut04/pr0401/index.md",
-    "ut04/index.md",
     "index.md",
     "ut03/pr0303/index.md",
     "ut03/pr0303/img/databaseRestored.png",
