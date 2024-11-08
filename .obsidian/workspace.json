@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ut04/pr0403/index.md",
+                "file": "ut04/pr0405/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -164,7 +164,13 @@
   },
   "active": "5be4195d8d066c5b",
   "lastOpenFiles": [
+    "ut04/pr0405/code/aplicar_operaciones_cadena.py~",
+    "ut04/pr0405/code/aplicar_operaciones_cadena.py",
+    "ut04/pr0405/code/pipe_transformacion_listas.py~",
+    "ut04/pr0405/code/pipe_transformacion_listas.py",
+    "ut04/pr0405/code/calificacion_alumnos.py",
     "ut04/pr0403/code/concatenar_listas.py~",
+    "ut04/pr0403/index.md",
     "ut04/pr0405/index.md",
     "ut04/pr0404/index.md",
     "ut04/pr0405/code/producto_cartesiano.py~",
@@ -172,12 +178,7 @@
     "ut04/pr0405/code/concatenacion_listas.py~",
     "ut04/pr0405/code/concatenacion_listas.py",
     "ut04/pr0405/code/palabras_por_longitud.py~",
-    "ut04/pr0405/code/palabras_por_longitud.py",
-    "ut04/pr0405/code/interseccion_de_conjuntos.py~",
-    "ut04/pr0405/code/interseccion_de_conjuntos.py",
-    "ut04/pr0405/code/frecuencia_de_palabras.py~",
     "ut04/index.md",
-    "ut04/pr0403/index.md",
     "ut04/pr0402/index.md",
     "ut04/pr0401/index.md",
     "index.md",

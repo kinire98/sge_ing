@@ -195,8 +195,23 @@ print(
             )
         )
 ```
-## Ejercicio 12
+## Ejercicio 11
 ### Calificación de alumnos
+```python
+alumnos = [("Ana", 4), ("Bruno", 7), ("Clara", 5), ("David", 8)]
+
+print(
+        list(map(
+            lambda x: x[0],
+            filter(
+                lambda y: y[1] >= 5,
+                alumnos
+                )
+            ))
+        )
+```
+## Ejercicio 12
+### Calcular producto cartesiano
 ```python
 from functools import reduce
 lista1 = [1, 2]
@@ -220,5 +235,39 @@ print(
                 []
                 )
             )
+        )
+```
+## Ejercicio 13
+### Pipe de transformación de listas
+```python
+from functools import reduce
+
+
+funciones = [lambda x: x*2, lambda x: x+3, lambda x: x-1]
+numeros = [1, 2, 3]
+print(
+        list(map(
+            lambda x: reduce(
+                lambda acc, val: val(acc),
+                funciones,
+                x
+                ),
+            numeros
+            ))
+        )
+```
+## Ejercicio 14
+### Aplicar operaciones de cadena
+```python
+palabras = ["HOLA", "MUNDO", "SOL", "CIELO", "mar"]
+
+print(
+        list(map(
+            lambda x: x[:1].lower() + x[1:].upper(),
+            filter(
+                lambda y: len(y) > 3 and y.isupper(),
+                palabras
+                )
+            ))
         )
 ```
