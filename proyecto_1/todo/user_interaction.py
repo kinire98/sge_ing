@@ -97,19 +97,43 @@ def filters_menu() -> int:
 def name_filter_menu() -> str:
     _clear_terminal()
     return input("Introduce la expresión regular para los nombres de tareas: ")
-def priority_filter_menu() -> list[str]:
+
+def priority_filter_menu() -> list[int]:
     _clear_terminal()
-    return input("Introduce las prioridades que quieres que aparezcan separadas por comas: ").split(",")
+    priorities = input("Introduce las prioridades, entre 1 y 10, que quieres que aparezcan separadas por comas: ").split(",")
+    return list(map(
+            lambda x: int(x),
+            priorities
+            )) if _is_valid_int_list(priorities) else priority_filter_menu()
+def _is_valid_int_list(values: list[str]) -> bool:
+    for value in values:
+        try:
+            int_value = int(value)
+            if int_value < 1 or int_value > 10:
+                return False
+        except ValueError:
+            return False
+    return True
 def date_filter_menu() -> str:
+    _clear_terminal()
     date = input("Introduce una fecha con formato [dd/mm/aaaa]: ")
     return date if _check_correct_date(date) else date_filter_menu()
-
 def _check_correct_date(date: str) -> bool:
     try:
         parse(date, fuzzy=True)
         return True
     except ValueError:
         return False
+def before_after_equal_date() -> int:
+    _clear_terminal()
+    txt = "{}{}{:^5}{:<40}{:15}"
+    print(txt.format(_BLACK, _BACKGROUND_WHITE, 1,  "Antes", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_MAGENTA, 2, "Después", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_RED, 3, "Igual", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_CYAN, 4, "Antes o igual", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_GREEN, 5,  "Después o igual", _RESET))
+    print(txt.format(_WHITE, _BACKGROUND_BLACK, 6,  "Antes o después", _RESET))
+    return _get_option(1, 6, before_after_equal_date)
 def completed_filter_menu() -> bool:
     return True if _completed_filter_menu() == 1 else False
 

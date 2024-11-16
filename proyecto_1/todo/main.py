@@ -46,6 +46,27 @@ def custom_filters() -> dict:
     
     return filters
 def apply_filters(filters: dict) -> dict:
+    match user_interaction.filters_menu():
+        case 1:
+            filters["filters"]["name"] = user_interaction.name_filter_menu()
+            filters["filters_present"] = True
+        case 2:
+            filters["filters"]["priorities"] = user_interaction.priority_filter_menu()
+            filters["filters_present"] = True
+        case 3:
+            filters["filters"]["date"] = {
+                    "date": user_interaction.date_filter_menu(),
+                    "option": user_interaction.before_after_equal_date()
+                    }
+            filters["filters_present"] = True
+        case 4:
+            filters["filters"]["completed"] = user_interaction.completed_filter_menu()
+            filters["filters_present"] = True
+        case 5:
+            filters["filters_present"] = False
+            filters["filters"] = {}
+
+        
     return filters
 
 def orders(filters: dict):
@@ -64,6 +85,8 @@ def orders(filters: dict):
             filters["orders_present"] = True
         case 4:
             filters["orders_present"] = False
+            filters["order_value"] = ""
+            filters["ascending"] = False
     return filters
 
 
