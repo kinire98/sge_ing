@@ -1,3 +1,5 @@
-nombre,prioridad,fecha_limite,completada
-Tarea 1,3,12/12/12,true
-Tarea 2,10,13/12/12,false
+name,priority,limit_date,completed
+Tarea 1,3,12/12/2012,true
+Tarea 2,10,13/12/2012,false
+Tarea 3,5,13/12/2024,false
+Tarea 4,5,13/12/2024,true

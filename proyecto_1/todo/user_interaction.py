@@ -1,4 +1,7 @@
 import os
+from datetime import datetime
+from typing import Callable
+from dateutil.parser import parse
 _RESET = '\033[0m'
 _BLACK = '\033[30m'
 _RED = '\033[31m'
@@ -37,27 +40,108 @@ _BACKGROUND_WHITE = '\033[107m'
 _TAB = "\t"
 def main_menu() -> int:
     """Menu principal"""
-    os.system("cls" if os.name == "nt" else "printf '\033c'")
+    _clear_terminal()
     txt = "{}{}{:^5}{:<40}{:15}"
     print(txt.format(_BLACK, _BACKGROUND_WHITE, 1,  "Listar tareas", _RESET))
     print(txt.format(_BLACK, _BACKGROUND_MAGENTA, 2, "Añadir tareas", _RESET))
     print(txt.format(_BLACK, _BACKGROUND_RED, 3,"Eliminar tareas", _RESET))
     print(txt.format(_BLACK, _BACKGROUND_CYAN, 4, "Marcar tarea como completada", _RESET))
     print(txt.format(_BLACK, _BACKGROUND_GREEN, 5,  "Salir", _RESET))
-    return _get_option(1, 5)
-def listar_tareas_menu() -> int:
-    os.system("cls" if os.name == "nt" else "printf '\033c'")
+    return _get_option(1, 5, main_menu)
+def list_tasks_menu() -> int:
+    _clear_terminal()
     txt = "{}{}{:^5}{:<40}{:15}"
     print(txt.format(_BLACK, _BACKGROUND_WHITE, 1,  "Listar todas las tareas", _RESET))
     print(txt.format(_BLACK, _BACKGROUND_MAGENTA, 2, "Listar tareas completadas", _RESET))
-    print(txt.format(_BLACK, _BACKGROUND_RED, 3,"Listar tareas sin compleatar", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_RED, 3,"Listar tareas sin completar", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_CYAN, 4, "Filtros y orden personalizados", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_GREEN, 5,  "Tareas archivadas", _RESET))
+    print(txt.format(_WHITE, _BACKGROUND_BLACK, 6,  "Salir", _RESET))
+    return _get_option(1, 6, list_tasks_menu)
+
+def list_archived_tasks_menu() -> int:
+    _clear_terminal()
+    txt = "{}{}{:^5}{:<40}{:15}"
+    print(txt.format(_BLACK, _BACKGROUND_WHITE, 1,  "Listar todas las tareas", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_MAGENTA, 2, "Listar tareas completadas", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_RED, 3,"Listar tareas sin completar", _RESET))
     print(txt.format(_BLACK, _BACKGROUND_CYAN, 4, "Filtros y orden personalizados", _RESET))
     print(txt.format(_BLACK, _BACKGROUND_GREEN, 5,  "Salir", _RESET))
-    return _get_option(1, 5)
-def filtros_personalizados() -> int:
-    return 0
+    return _get_option(1, 5, list_archived_tasks_menu)
+def archived_tasks_menu() -> int:
+    _clear_terminal()
+    txt = "{}{}{:^5}{:<40}{:15}"
+    print(txt.format(_BLACK, _BACKGROUND_WHITE, 1,  "Listar todas las tareas", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_MAGENTA, 2, "Listar tareas completadas", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_RED, 3,"Listar tareas sin completar", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_CYAN, 4, "Filtros y orden personalizados", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_GREEN, 5,  "Salir", _RESET))
+    return _get_option(1, 5, list_tasks_menu)
+def custom_filters() -> int:
+    _clear_terminal()
+    txt = "{}{}{:^5}{:<40}{:15}"
+    print(txt.format(_BLACK, _BACKGROUND_WHITE, 1,  "Filtros", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_MAGENTA, 2, "Orden", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_RED, 3, "Salir y aplicar filtros", _RESET))
+    return _get_option(1, 3, custom_filters)
+def filters_menu() -> int:
+    _clear_terminal()
+    txt = "{}{}{:^5}{:<40}{:15}"
+    print(txt.format(_BLACK, _BACKGROUND_WHITE, 1,  "Nombre", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_MAGENTA, 2, "Prioridad", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_RED, 3,"Fecha", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_CYAN, 4, "Completadas", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_GREEN, 5,  "Limpiar filtros", _RESET))
+    print(txt.format(_WHITE, _BACKGROUND_BLACK, 6,  "Salir", _RESET))
+    return _get_option(1, 6, filters_menu)
+def name_filter_menu() -> str:
+    _clear_terminal()
+    return input("Introduce la expresión regular para los nombres de tareas: ")
+def priority_filter_menu() -> list[str]:
+    _clear_terminal()
+    return input("Introduce las prioridades que quieres que aparezcan separadas por comas: ").split(",")
+def date_filter_menu() -> str:
+    date = input("Introduce una fecha con formato [dd/mm/aaaa]: ")
+    return date if _check_correct_date(date) else date_filter_menu()
+
+def _check_correct_date(date: str) -> bool:
+    try:
+        parse(date, fuzzy=True)
+        return True
+    except ValueError:
+        return False
+def completed_filter_menu() -> bool:
+    return True if _completed_filter_menu() == 1 else False
+
+def _completed_filter_menu() -> int:
+    _clear_terminal()
+    txt = "{}{}{:^5}{:<40}{:15}"
+    print(txt.format(_BLACK, _BACKGROUND_WHITE, 1,  "Sí", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_MAGENTA, 2, "No", _RESET))
+    return _get_option(1, 2, _completed_filter_menu)
+
+
+def orders_menu() -> int:
+    _clear_terminal()
+    txt = "{}{}{:^5}{:<40}{:15}"
+    print("NOTA: Solo se puede ordenar por un parametro a la vez")
+    print(txt.format(_BLACK, _BACKGROUND_WHITE, 1,  "Nombre", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_MAGENTA, 2, "Prioridad", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_RED, 3,"Fecha", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_CYAN, 4, "Limpiar orden", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_GREEN, 5,  "Salir", _RESET))
+    return _get_option(1, 5, orders_menu)
+def ascending_descending() -> int:
+    _clear_terminal()
+    txt = "{}{}{:^5}{:<40}{:15}"
+    print(txt.format(_BLACK, _BACKGROUND_WHITE, 1,  "Ascendente", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_MAGENTA, 2, "Descendente", _RESET))
+    return _get_option(1, 2, ascending_descending)
+
+
 def print_tasks(tasks: list[dict]):
     counter = 1
+    today = datetime.now()
     fmt = "{}{}{:>3}. {}{:<20} {}{:<9} {}{:<15} {}{:<12}{}"
     os.system("cls" if os.name == "nt" else "printf '\033c'")
     print(
@@ -77,19 +161,20 @@ def print_tasks(tasks: list[dict]):
                 )
             )
     for task in tasks:
+        date = datetime.strptime(task["limit_date"], "%d/%m/%Y")
         print(
                 fmt.format(
                     "",
                     "",
                     counter,
                     "",
-                    task["nombre"],
+                    task["name"],
                     "",
-                    task["prioridad"],
+                    task["priority"],
+                    (f"{_BLACK}{_BACKGROUND_GREEN}" if date > today else f"{_BLACK}{_BACKGROUND_RED}"),
+                    task["limit_date"] + _RESET + "     ",
                     "",
-                    task["fecha_limite"],
-                    "",
-                    (f"{_BLACK}{_BACKGROUND_GREEN}Sí" if task["completada"] == "true" else f"{_BLACK}{_BACKGROUND_RED}No"),
+                    (f"{_BLACK}{_BACKGROUND_GREEN}Sí" if task["completed"] == "true" else f"{_BLACK}{_BACKGROUND_RED}No"),
                     _RESET
                     )
                 )
@@ -108,7 +193,7 @@ def print_tasks(tasks: list[dict]):
 
 
 
-def _get_option(min: int, max: int) -> int:
+def _get_option(min: int, max: int, f: Callable[[], int]) -> int:
     """
     Preguntar al usuario por una opcion entre el maximo y el minimo.
     Hasta que no se introduzca una opcion correcta, no se dejara de preguntar
@@ -116,9 +201,9 @@ def _get_option(min: int, max: int) -> int:
     try:
         out = int(input(f"Selecciona una opcion entre {min} y {max}: "))
     except ValueError:
-        print("Introduce solo numeros")
-        out = _get_option(min, max)
+        out = f()
     if out < min or out > max:
-        print("El numero introducido tiene que estar dentro del rango")
-        out = _get_option(min, max)
+        out = f()
     return out
+def _clear_terminal():
+    os.system("cls" if os.name == "nt" else "printf '\033c'")
