@@ -120,7 +120,7 @@ def date_filter_menu() -> str:
     return date if _check_correct_date(date) else date_filter_menu()
 def _check_correct_date(date: str) -> bool:
     try:
-        parse(date, fuzzy=True)
+        datetime.strptime(date, "%d/%m/%Y")
         return True
     except ValueError:
         return False
