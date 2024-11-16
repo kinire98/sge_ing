@@ -1,4 +1,6 @@
 from main import main
 
-
-main()
+try:
+    main()
+except KeyboardInterrupt:
+    print()

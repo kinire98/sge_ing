@@ -30,6 +30,7 @@ def main():
         option_selected = user_interaction.main_menu()
 
 def custom_filters() -> dict:
+    """Administador para aplicar los filtros personalizados"""
     filters = {
             "filters_present": False,
             "orders_present": False,
@@ -48,6 +49,9 @@ def custom_filters() -> dict:
     
     return filters
 def apply_filters(filters: dict) -> dict:
+    """
+    Guarda los filtros en el diccionario
+    """
     match user_interaction.filters_menu():
         case 1:
             filters["filters"]["name"] = user_interaction.name_filter_menu()
@@ -72,6 +76,9 @@ def apply_filters(filters: dict) -> dict:
     return filters
 
 def orders(filters: dict):
+    """
+    Guarda la manera de ordenación en el diccionario
+    """
     match user_interaction.orders_menu():
         case 1:
             filters["order_value"] = "name"
@@ -93,6 +100,9 @@ def orders(filters: dict):
 
 
 def archived_tasks():
+    """
+    Administrador para las tareas archivadas
+    """
     match user_interaction.list_archived_tasks_menu():
         case 1:
             user_interaction.print_tasks(task_managment.get_all_tasks(True))
@@ -103,6 +113,9 @@ def archived_tasks():
         case 4:
             user_interaction.print_tasks(task_managment.get_tasks_custom_filter(True, custom_filters()))
 def delete_archive():
+    """
+    Administrador para borrar/archivar tareas
+    """
     match user_interaction.delete_archive():
         case 1:
             match user_interaction.archived_not_archived():
