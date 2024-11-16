@@ -1,8 +1,11 @@
+from os.path import relpath
 from typing import Callable
+from importlib import reload
 import re
 
 from datetime import datetime
 import file_operations
+from user_interaction import archived_not_archived
 def get_all_tasks(archive: bool) -> list[dict]:
     if archive:
         return file_operations.return_archived_tasks(
@@ -96,3 +99,56 @@ def _dates_filter(stored_value: str, filter_value: str, option: int) -> bool:
             return stored_date >= filter_date
         case _:
             return stored_date != filter_date
+
+
+def add_task(name: str, priority: int, date: str):
+    tasks = file_operations.return_tasks(lambda _: True) 
+    archived_tasks = file_operations.return_archived_tasks(lambda _: True)
+    tasks.append({
+        "name": name,
+        "priority": str(priority),
+        "limit_date": date,
+        "completed": "false"
+        })
+    file_operations.write_files(tasks, archived_tasks) 
+    reload(file_operations) 
+def mark_as_completed(idx: int):
+    if idx == -1:
+        return
+    all_tasks = file_operations.return_tasks(lambda _: True) 
+    completed_task = get_not_completed_tasks(False)[idx]
+    for i in range(len(all_tasks)):
+        if completed_task == all_tasks[i]:
+            all_tasks[i]["completed"] = "true"
+            break
+    archived_tasks = file_operations.return_archived_tasks(lambda _: True)
+    file_operations.write_files(all_tasks, archived_tasks)
+    reload(file_operations)
+def unarchive(idx: int):
+    if idx == -1:
+        return
+    tasks = file_operations.return_tasks(lambda _: True) 
+    archived_tasks = file_operations.return_archived_tasks(lambda _: True)
+    tasks.append(archived_tasks.pop(idx))
+    file_operations.write_files(tasks, archived_tasks)
+    reload(file_operations)
+def archive(idx: int):
+    if idx == -1:
+        return
+    tasks = file_operations.return_tasks(lambda _: True) 
+    archived_tasks = file_operations.return_archived_tasks(lambda _: True)
+    archived_tasks.append(tasks.pop(idx))
+    file_operations.write_files(tasks, archived_tasks)
+    reload(file_operations)
+def remove(idx: int, archive: bool):
+    if idx == -1:
+        return
+    tasks = file_operations.return_tasks(lambda _: True) 
+    archived_tasks = file_operations.return_archived_tasks(lambda _: True)
+    if archive:
+        archived_tasks.pop(idx)
+    else:
+        tasks.pop(idx)
+    file_operations.write_files(tasks, archived_tasks)
+    reload(file_operations)
+    

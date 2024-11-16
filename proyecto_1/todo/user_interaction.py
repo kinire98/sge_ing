@@ -44,10 +44,11 @@ def main_menu() -> int:
     txt = "{}{}{:^5}{:<40}{:15}"
     print(txt.format(_BLACK, _BACKGROUND_WHITE, 1,  "Listar tareas", _RESET))
     print(txt.format(_BLACK, _BACKGROUND_MAGENTA, 2, "Añadir tareas", _RESET))
-    print(txt.format(_BLACK, _BACKGROUND_RED, 3,"Eliminar tareas", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_RED, 3,"Eliminar/Archivar tareas", _RESET))
     print(txt.format(_BLACK, _BACKGROUND_CYAN, 4, "Marcar tarea como completada", _RESET))
-    print(txt.format(_BLACK, _BACKGROUND_GREEN, 5,  "Salir", _RESET))
-    return _get_option(1, 5, main_menu)
+    print(txt.format(_BLACK, _BACKGROUND_GREEN, 5,  "Desarchivar tareas", _RESET))
+    print(txt.format(_WHITE, _BACKGROUND_BLACK, 6,  "Salir", _RESET))
+    return _get_option(1, 6, main_menu)
 def list_tasks_menu() -> int:
     _clear_terminal()
     txt = "{}{}{:^5}{:<40}{:15}"
@@ -116,7 +117,9 @@ def _is_valid_int_list(values: list[str]) -> bool:
     return True
 def date_filter_menu() -> str:
     _clear_terminal()
-    date = input("Introduce una fecha con formato [dd/mm/aaaa]: ")
+    date = input("Introduce una fecha con formato [dd/mm/aaaa] (ENTER para fecha actual): ")
+    if len(date) == 0:
+        return datetime.now().strftime("%d/%m/%Y")
     return date if _check_correct_date(date) else date_filter_menu()
 def _check_correct_date(date: str) -> bool:
     try:
@@ -162,8 +165,36 @@ def ascending_descending() -> int:
     print(txt.format(_BLACK, _BACKGROUND_MAGENTA, 2, "Descendente", _RESET))
     return _get_option(1, 2, ascending_descending)
 
-
+def delete_archive() -> int:
+    _clear_terminal()
+    txt = "{}{}{:^5}{:<40}{:15}"
+    print(txt.format(_BLACK, _BACKGROUND_WHITE, 1,  "Eliminar", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_MAGENTA, 2, "Archivar", _RESET))
+    return _get_option(1, 2, delete_archive)
+def archived_not_archived() -> int:
+    _clear_terminal()
+    txt = "{}{}{:^5}{:<40}{:15}"
+    print(txt.format(_BLACK, _BACKGROUND_WHITE, 1,  "No archivadas", _RESET))
+    print(txt.format(_BLACK, _BACKGROUND_MAGENTA, 2, "Archivadas", _RESET))
+    return _get_option(1, 2, archived_not_archived)
 def print_tasks(tasks: list[dict]):
+    _print_tasks(tasks) 
+    print()
+    print()
+    input("Presiona ENTER para continuar")
+
+def get_task_to_complete(tasks: list[dict]) -> int:
+    _clear_terminal()
+    if len(tasks) == 0:
+        print("No hay tareas")
+        input()
+        return -1
+    return _get_task_to_complete(tasks) - 1
+def _get_task_to_complete(tasks: list[dict]) -> int:
+    _print_tasks(tasks)
+    return _get_option_delete_mark_completed(1, len(tasks), _get_task_to_complete, tasks)
+
+def _print_tasks(tasks: list[dict]):
     counter = 1
     today = datetime.now()
     fmt = "{}{}{:>3}. {}{:<20} {}{:<9} {}{:<15} {}{:<12}{}"
@@ -203,11 +234,20 @@ def print_tasks(tasks: list[dict]):
                     )
                 )
         counter += 1
-    print()
-    print()
-    input("Presiona ENTER para continuar")
 
-
+def get_priority() -> int:
+    _clear_terminal()
+    print("Introduce una prioridad para la tarea")
+    return _get_option(1, 10, get_priority)
+def get_date() -> str:
+    _clear_terminal()
+    date = input("Introduce una fecha para añadir con formato [dd/mm/aaaa] (ENTER para fecha actual): ")
+    if len(date) == 0:
+        return datetime.now().strftime("%d/%m/%Y")
+    return date if _check_correct_date(date) else get_date()
+def get_task_name() -> str:
+    _clear_terminal()
+    return input("Introduce un nombre para la nueva tarea: ")
 
 
 
@@ -228,6 +268,18 @@ def _get_option(min: int, max: int, f: Callable[[], int]) -> int:
         out = f()
     if out < min or out > max:
         out = f()
+    return out
+def _get_option_delete_mark_completed(min: int, max: int, f: Callable[[list[dict]], int], tasks: list[dict]) -> int:
+    """
+    Preguntar al usuario por una opcion entre el maximo y el minimo.
+    Hasta que no se introduzca una opcion correcta, no se dejara de preguntar
+    """
+    try:
+        out = int(input(f"Selecciona una opcion entre {min} y {max}: "))
+    except ValueError:
+        out = f(tasks)
+    if out < min or out > max:
+        out = f(tasks)
     return out
 def _clear_terminal():
     os.system("cls" if os.name == "nt" else "printf '\033c'")

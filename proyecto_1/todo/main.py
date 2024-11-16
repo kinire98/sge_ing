@@ -5,7 +5,7 @@ import user_interaction
 def main():
     """Punto de entrada a la app"""
     option_selected = user_interaction.main_menu()
-    while option_selected != 5:
+    while option_selected != 6:
         match option_selected:
             case 1:
                 match user_interaction.list_tasks_menu():
@@ -20,11 +20,13 @@ def main():
                     case 5:
                         archived_tasks()
             case 2:
-                print("")
+                task_managment.add_task(user_interaction.get_task_name(), user_interaction.get_priority(), user_interaction.get_date())
             case 3:
-                print("")
+                delete_archive()
             case 4:
-                print("")
+                task_managment.mark_as_completed(user_interaction.get_task_to_complete(task_managment.get_not_completed_tasks(False)))
+            case 5:
+                task_managment.unarchive(user_interaction.get_task_to_complete(task_managment.get_all_tasks(True)))
         option_selected = user_interaction.main_menu()
 
 def custom_filters() -> dict:
@@ -100,3 +102,13 @@ def archived_tasks():
             user_interaction.print_tasks(task_managment.get_not_completed_tasks(True))
         case 4:
             user_interaction.print_tasks(task_managment.get_tasks_custom_filter(True, custom_filters()))
+def delete_archive():
+    match user_interaction.delete_archive():
+        case 1:
+            match user_interaction.archived_not_archived():
+                case 1:
+                    task_managment.remove(user_interaction.get_task_to_complete(task_managment.get_all_tasks(False)), False)
+                case 2:
+                    task_managment.remove(user_interaction.get_task_to_complete(task_managment.get_all_tasks(True)), True)
+        case 2:
+            task_managment.archive(user_interaction.get_task_to_complete(task_managment.get_all_tasks(False)))
