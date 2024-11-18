@@ -11,13 +11,42 @@
             "id": "ea21e521aeec1294",
             "type": "leaf",
             "state": {
+              "type": "markdown",
+              "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "5e92c7f8da7c0d33",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "proyectos/proyecto_1/index.md",
+                "mode": "preview",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "6bf6e2cf4aa0d778",
+            "type": "leaf",
+            "state": {
               "type": "empty",
               "state": {},
               "icon": "lucide-file",
               "title": "Nueva pestaña"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -158,8 +187,11 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "9902e9345ff72556",
+  "active": "5e92c7f8da7c0d33",
   "lastOpenFiles": [
+    "index.md",
+    "proyectos/proyecto_1/index.md",
+    "ut04/index.md",
     "proyectos/proyecto_1/todo/file_operations.py~",
     "proyectos/proyecto_1/todo/res/tasks.csv",
     "proyectos/proyecto_1/todo/res/archive.csv",
@@ -170,7 +202,6 @@
     "proyectos/proyecto_1/todo/user_interaction.py",
     "proyectos/proyecto_1/todo/task_managment.py",
     "proyectos/proyecto_1/todo/res",
-    "proyectos/proyecto_1/todo/main.py",
     "ut03/pr0303/index.md",
     "ut03/pr0302/index.md",
     "ut03/pr0301/index.md",
@@ -178,10 +209,8 @@
     "ut04/pr0405/index.md",
     "ut04/pr0403/index.md",
     "ut04/pr0404/index.md",
-    "ut04/index.md",
     "ut04/pr0402/index.md",
     "ut04/pr0401/index.md",
-    "index.md",
     "ut03/pr0303/img/databaseRestored.png",
     "ut03/pr0303/img/restoreDatabase.png",
     "ut03/pr0303/img/creationDatabase.png",
