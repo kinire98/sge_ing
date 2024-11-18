@@ -27,8 +27,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "proyectos/proyecto_1/index.md",
-                "mode": "preview",
+                "file": "index.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
@@ -189,8 +189,8 @@
   },
   "active": "5e92c7f8da7c0d33",
   "lastOpenFiles": [
-    "index.md",
     "proyectos/proyecto_1/index.md",
+    "index.md",
     "ut04/index.md",
     "proyectos/proyecto_1/todo/file_operations.py~",
     "proyectos/proyecto_1/todo/res/tasks.csv",
