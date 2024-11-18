@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 niveles = int(input("Introduce el numero de asteriscos que quieres que tenga el ultimo nivel: "))
 while (niveles & 1 == 0):
     print("El numero tiene que ser impar")

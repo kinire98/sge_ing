@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 a = int(input("Introduce el primer número: "))
 b = int(input("Introduce el segundo número: "))
 

@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "78632abba381f2c8",
+        "id": "9218777606b643ac",
         "type": "tabs",
         "children": [
           {
-            "id": "5be4195d8d066c5b",
+            "id": "ea21e521aeec1294",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ut04/pr0405/index.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "index"
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -162,41 +158,41 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "5be4195d8d066c5b",
+  "active": "9902e9345ff72556",
   "lastOpenFiles": [
-    "ut04/pr0405/code/aplicar_operaciones_cadena.py~",
-    "ut04/pr0405/code/aplicar_operaciones_cadena.py",
-    "ut04/pr0405/code/pipe_transformacion_listas.py~",
-    "ut04/pr0405/code/pipe_transformacion_listas.py",
-    "ut04/pr0405/code/calificacion_alumnos.py",
-    "ut04/pr0403/code/concatenar_listas.py~",
-    "ut04/pr0403/index.md",
+    "proyectos/proyecto_1/todo/res/tasks.csv",
+    "proyectos/proyecto_1/todo/res/archive.csv",
+    "proyectos/proyecto_1/todo/__pycache__/user_interaction.cpython-312.pyc",
+    "proyectos/proyecto_1/todo/__pycache__/task_managment.cpython-312.pyc",
+    "proyectos/proyecto_1/todo/__pycache__/main.cpython-312.pyc",
+    "proyectos/proyecto_1/todo/__pycache__/file_operations.cpython-312.pyc",
+    "proyectos/proyecto_1/todo/user_interaction.py",
+    "proyectos/proyecto_1/todo/task_managment.py",
+    "proyectos/proyecto_1/todo/res",
+    "proyectos/proyecto_1/todo/main.py",
+    "proyectos/proyecto_1/todo/file_operations.py",
+    "ut03/pr0303/index.md",
+    "ut03/pr0302/index.md",
+    "ut03/pr0301/index.md",
+    "ut02/index.md",
     "ut04/pr0405/index.md",
+    "ut04/pr0403/index.md",
     "ut04/pr0404/index.md",
-    "ut04/pr0405/code/producto_cartesiano.py~",
-    "ut04/pr0405/code/producto_cartesiano.py",
-    "ut04/pr0405/code/concatenacion_listas.py~",
-    "ut04/pr0405/code/concatenacion_listas.py",
-    "ut04/pr0405/code/palabras_por_longitud.py~",
     "ut04/index.md",
     "ut04/pr0402/index.md",
     "ut04/pr0401/index.md",
     "index.md",
-    "ut03/pr0303/index.md",
     "ut03/pr0303/img/databaseRestored.png",
     "ut03/pr0303/img/restoreDatabase.png",
     "ut03/pr0303/img/creationDatabase.png",
     "ut03/pr0303/img/backup.png",
     "ut03/pr0303/img/databaseManager.png",
-    "ut03/pr0302/index.md",
     "ut03/pr0303/img/datosBorrados.png",
     "ut03/index.md",
     "ut03/pr0302/img/libro5.png",
     "ut03/pr0302/img/libro4.png",
     "ut03/pr0302/img/libro3.png",
     "ut03/pr0302/img/libro2.png",
-    "ut03/pr0301/index.md",
-    "ut02/index.md",
     "Sin título.md",
     "Welcome.md"
   ]
