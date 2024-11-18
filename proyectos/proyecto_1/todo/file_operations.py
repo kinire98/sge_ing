@@ -12,7 +12,7 @@ def _load_tasks() -> list[dict]:
     try:
         with open(os.path.dirname(__file__) + "/res/tasks.csv") as csv_file:
             return list(csv.DictReader(csv_file))
-    except OSError:
+    except OSError | IOError | FileNotFoundError:
         user_interaction.error_opening_file()
         sys.exit()
 def _load_archived_tasks() -> list[dict]:
@@ -23,7 +23,7 @@ def _load_archived_tasks() -> list[dict]:
     try:
         with open(os.path.dirname(__file__) + "/res/archive.csv") as csv_file:
             return list(csv.DictReader(csv_file))
-    except OSError:
+    except OSError | IOError | FileNotFoundError:
         user_interaction.error_opening_file()
         sys.exit()
 _tasks = _load_tasks()
@@ -70,6 +70,6 @@ def write_files(tasks: list[dict], archived_tasks: list[dict]):
         else: 
             with open(os.path.dirname(__file__) + "/res/archive.csv", "w") as csv_file:
                  csv_file.write("name,priority,limit_date,completed\n")
-    except OSError:
+    except OSError | IOError | FileNotFoundError:
         user_interaction.error_opening_file()
         sys.exit()
