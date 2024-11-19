@@ -13,6 +13,20 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
+          },
+          {
+            "id": "d06e2641adcb4731",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "proyectos/proyecto_1/index.md",
                 "mode": "source",
                 "source": false
@@ -21,7 +35,8 @@
               "title": "index"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -162,10 +177,11 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "e7febcef96dcff32",
+  "active": "d06e2641adcb4731",
   "lastOpenFiles": [
-    "proyectos/proyecto_1/file_operations/index.md",
+    "index.md",
     "proyectos/proyecto_1/index.md",
+    "proyectos/proyecto_1/file_operations/index.md",
     "proyectos/proyecto_1/user_interaction/index.md",
     "proyectos/proyecto_1/user_interaction",
     "proyectos/proyecto_1/task_management/index.md",
@@ -177,7 +193,6 @@
     "proyectos/proyecto_1/file_operations",
     "proyectos/proyecto_1/init/index.md",
     "proyectos/proyecto_1/init",
-    "index.md",
     "proyectos/proyecto_1/todo/file_operations.py~",
     "proyectos/proyecto_1/todo/res/tasks.csv",
     "proyectos/proyecto_1/todo/res/archive.csv",
