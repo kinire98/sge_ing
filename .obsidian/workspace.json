@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9218777606b643ac",
+        "id": "08beabd77d342c1b",
         "type": "tabs",
         "children": [
           {
-            "id": "ea21e521aeec1294",
+            "id": "e7febcef96dcff32",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "proyectos/proyecto_1/index.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nueva pestaña"
+              "title": "index"
             }
           }
         ]
@@ -158,19 +162,26 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "9902e9345ff72556",
+  "active": "e7febcef96dcff32",
   "lastOpenFiles": [
+    "proyectos/proyecto_1/file_operations/index.md",
+    "proyectos/proyecto_1/index.md",
+    "proyectos/proyecto_1/user_interaction/index.md",
+    "proyectos/proyecto_1/user_interaction",
+    "proyectos/proyecto_1/task_management/index.md",
+    "proyectos/proyecto_1/todo/task_managment.py~",
+    "proyectos/proyecto_1/main/index.md",
+    "proyectos/proyecto_1/task_management",
+    "proyectos/proyecto_1/Sin título.md",
+    "proyectos/proyecto_1/main",
+    "proyectos/proyecto_1/file_operations",
+    "proyectos/proyecto_1/init/index.md",
+    "proyectos/proyecto_1/init",
+    "index.md",
     "proyectos/proyecto_1/todo/file_operations.py~",
     "proyectos/proyecto_1/todo/res/tasks.csv",
     "proyectos/proyecto_1/todo/res/archive.csv",
     "proyectos/proyecto_1/todo/__pycache__/user_interaction.cpython-312.pyc",
-    "proyectos/proyecto_1/todo/__pycache__/task_managment.cpython-312.pyc",
-    "proyectos/proyecto_1/todo/__pycache__/main.cpython-312.pyc",
-    "proyectos/proyecto_1/todo/__pycache__/file_operations.cpython-312.pyc",
-    "proyectos/proyecto_1/todo/user_interaction.py",
-    "proyectos/proyecto_1/todo/task_managment.py",
-    "proyectos/proyecto_1/todo/res",
-    "proyectos/proyecto_1/todo/main.py",
     "ut03/pr0303/index.md",
     "ut03/pr0302/index.md",
     "ut03/pr0301/index.md",
@@ -181,7 +192,6 @@
     "ut04/index.md",
     "ut04/pr0402/index.md",
     "ut04/pr0401/index.md",
-    "index.md",
     "ut03/pr0303/img/databaseRestored.png",
     "ut03/pr0303/img/restoreDatabase.png",
     "ut03/pr0303/img/creationDatabase.png",
