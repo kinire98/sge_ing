@@ -1,10 +1,5 @@
-## \__init__.py
-![](./init/index.md)
-## file_operations.py
-![](./file_operations/index.md)
-## main .py
-![](./main/index.md)
-## task_management.py
-![](./task_management/index.md)
-## user_interaction.py
-![](./user_interaction/index.md)
+## [\__init__.py](./init/index.md)
+## [file_operations.py](./file_operations/index.md)
+## [main .py](./main/index.md)
+## [task_management.py](./task_management/index.md)
+## [user_interaction.py](./user_interaction/index.md)
