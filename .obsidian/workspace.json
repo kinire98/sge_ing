@@ -13,12 +13,22 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ut05/pr0502/index.md",
+                "file": "ut06/pr0601/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
               "title": "index"
+            }
+          },
+          {
+            "id": "22354798d6710f83",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nueva pestaña"
             }
           }
         ]
@@ -52,7 +62,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "path:\"ut06/pr0601/img/\" ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -164,16 +174,34 @@
   },
   "active": "f7b2287e9a350ec4",
   "lastOpenFiles": [
+    "ut06/pr0601/img/formulario-rellenado.png",
+    "ut06/pr0601/index.md",
+    "ut06/pr0601/files/views-producto.xml.md",
+    "ut06/pr0601/files/views-menu.xml.md",
+    "ut06/pr0601/files/models-producto.py.md",
+    "ut06/pr0601/files/models-__init__.py.md",
+    "ut06/pr0601/files/__manifest__.py.md",
+    "files/__manifest__.md",
+    "files",
+    "ut06/pr0601/img/Pasted image.png",
+    "ut05/pr0501/index.md",
+    "ut06/pr0601/img",
+    "ut05/pr0502/index.md",
+    "ut05/index.md",
+    "ut06/pr0601/files",
+    "ut06/index.md",
+    "ut06/pr0601",
+    "pr0601/index.md",
+    "pr0601",
+    "index.md",
+    "ut06",
     "ut05/pr0502/autor_view.md",
     "ut05/pr0502/autor.md",
-    "ut05/pr0502/index.md",
     "ut05/pr0502/menu.md",
     "ut05/pr0502/libro_view.md",
     "ut05/pr0502/libro.md",
     "ut05/pr0502/manifest.md",
     "ut05/modulos/addons/modulo_biblioteca/views/autor_view.xml~",
-    "ut05/index.md",
-    "ut05/pr0501/index.md",
     "ut05/pr0502",
     "ut05/modulos/addons/gestion_salas/models/models.py~",
     "ut05/pr0501/manifest.md",
@@ -186,29 +214,10 @@
     "ut05/pr0501/img/modulos_busqueda.png",
     "ut05/pr0501/img/ajustes_desarrollador.png",
     "ut05/pr0501/img/barra_busqueda.png",
-    "index.md",
     "proyectos/proyecto_1/index.md",
     "ut05/pr0501/img/aplicaciones.png",
-    "ut05/pr0501/img",
     "pr0501/index.md",
-    "pr0501",
-    "ut03/pr0303/index.md",
-    "ut05/pr0501",
-    "proyectos/proyecto_1/file_operations/index.md",
-    "proyectos/proyecto_1/user_interaction/index.md",
-    "proyectos/proyecto_1/user_interaction",
-    "proyectos/proyecto_1/task_management/index.md",
-    "proyectos/proyecto_1/todo/task_managment.py~",
-    "proyectos/proyecto_1/main/index.md",
-    "proyectos/proyecto_1/task_management",
-    "proyectos/proyecto_1/Sin título.md",
-    "proyectos/proyecto_1/init/index.md",
-    "ut03/pr0302/index.md",
-    "ut03/pr0301/index.md",
-    "ut02/index.md",
     "ut03/pr0303/img/databaseRestored.png",
-    "ut03/pr0303/img/restoreDatabase.png",
-    "ut03/pr0303/img/creationDatabase.png",
-    "ut03/pr0303/img/backup.png"
+    "ut03/pr0303/img/restoreDatabase.png"
   ]
 }

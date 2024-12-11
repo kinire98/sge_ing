@@ -151,7 +151,7 @@ Esto es el archiv. En la primera parte sin descomentar, se establecen los campos
 En la segunda parte, se establecen las acciones que realizan cada uno de los elementos del menú.
 Y en la tercera se establecen dichos elementos del menú.
 ### Archivos modificados respecto al proyecto generado por `odoo scaffold`
-[`__manifest.py__`](./manifest.md)
-[`models/models.py`](./models.md)
-[`security/ir.model.access.csv`](./ir.model.access.md)
-[`views/views.xml`](./views.md)
+[`__manifest.py__`](./manifest.md)  
+[`models/models.py`](./models.md)  
+[`security/ir.model.access.csv`](./ir.model.access.md)  
+[`views/views.xml`](./views.md)  
