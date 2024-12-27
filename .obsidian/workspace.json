@@ -13,8 +13,8 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ut06/pr0602/index.md",
-                "mode": "preview",
+                "file": "ut06/index.md",
+                "mode": "source",
                 "source": true
               },
               "icon": "lucide-file",
@@ -164,20 +164,20 @@
   },
   "active": "bd6fc773956dbd21",
   "lastOpenFiles": [
+    "ut06/pr0601/index.md",
+    "ut06/index.md",
+    "ut06/pr0602/index.md",
     "ut06/pr0602/img/socio.png",
     "ut06/pr0602/img/Pasted image.png",
     "ut06/pr0602/img/libro.png",
     "ut06/pr0602/img/genero.png",
     "ut06/pr0602/img/autor.png",
     "ut06/pr0602/files/models/autores.py.md",
-    "ut06/pr0602/index.md",
     "modulos/addons/library_ing/views/library_autores_views.xml~",
     "modulos/addons/library_ing/models/autores.py~",
     "ut06/pr0602/files/views/library_menu_views.xml.md",
     "ut06/pr0602/files/views/library_autores_views.xml.md",
     "ut06/pr0602/files/security/ir.model.access.csv.md",
-    "ut06/pr0601/index.md",
-    "ut06/index.md",
     "ut06/pr0602/files/views/library_socios_views.xml.md",
     "ut06/pr0602/files/Sin título.md",
     "ut06/pr0602/files/views/library_libros_views.xml.md",
@@ -208,7 +208,6 @@
     "ut05/pr0501/index.md",
     "ut05/pr0501/img/aplicaciones_instaladas.png",
     "ut05/pr0501/img/Pasted image.png",
-    "ut05/pr0501/img/modulos_busqueda.png",
-    "ut05/pr0501/img/ajustes_desarrollador.png"
+    "ut05/pr0501/img/modulos_busqueda.png"
   ]
 }
