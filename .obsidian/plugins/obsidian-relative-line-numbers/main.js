@@ -190,3 +190,5 @@ var RelativeLineNumbers = class extends import_obsidian.Plugin {
     });
   }
 };
+
+/* nosourcemap */

@@ -1,3 +1,6 @@
+# `views/library_menu_views.xml`
+
+```xml
 <?xml version='1.0' encoding='utf-8'?>
 <odoo>
   <data>
@@ -16,3 +19,4 @@
 
   </data>
 </odoo>
+```

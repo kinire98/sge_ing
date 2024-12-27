@@ -1,3 +1,6 @@
+# `models/libros.py`
+
+```python
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api #type: ignore
@@ -29,4 +32,4 @@ class Libros(models.Model):
             comodel_name = "library_ing.socios",
             string = "Prestado a:"
             )
-
+```

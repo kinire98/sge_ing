@@ -1,3 +1,6 @@
+# `models/generos.py`
+
+```python
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api #type: ignore
@@ -7,4 +10,4 @@ class Generos(models.Model):
     _description = "Géneros literarios de los libros"
 
     name = fields.Char(required = True, string = "Nombre")
-
+```

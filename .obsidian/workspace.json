@@ -4,31 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "3b0114972fcbbfcf",
+        "id": "3059430f8755b24b",
         "type": "tabs",
         "children": [
           {
-            "id": "f7b2287e9a350ec4",
+            "id": "bd6fc773956dbd21",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ut06/pr0601/index.md",
-                "mode": "source",
-                "source": false
+                "file": "ut06/pr0602/index.md",
+                "mode": "preview",
+                "source": true
               },
               "icon": "lucide-file",
               "title": "index"
-            }
-          },
-          {
-            "id": "22354798d6710f83",
-            "type": "leaf",
-            "state": {
-              "type": "empty",
-              "state": {},
-              "icon": "lucide-file",
-              "title": "Nueva pestaña"
             }
           }
         ]
@@ -172,10 +162,41 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "f7b2287e9a350ec4",
+  "active": "bd6fc773956dbd21",
   "lastOpenFiles": [
-    "ut06/pr0601/img/formulario-rellenado.png",
+    "ut06/pr0602/img/socio.png",
+    "ut06/pr0602/img/Pasted image.png",
+    "ut06/pr0602/img/libro.png",
+    "ut06/pr0602/img/genero.png",
+    "ut06/pr0602/img/autor.png",
+    "ut06/pr0602/files/models/autores.py.md",
+    "ut06/pr0602/index.md",
+    "modulos/addons/library_ing/views/library_autores_views.xml~",
+    "modulos/addons/library_ing/models/autores.py~",
+    "ut06/pr0602/files/views/library_menu_views.xml.md",
+    "ut06/pr0602/files/views/library_autores_views.xml.md",
+    "ut06/pr0602/files/security/ir.model.access.csv.md",
     "ut06/pr0601/index.md",
+    "ut06/index.md",
+    "ut06/pr0602/files/views/library_socios_views.xml.md",
+    "ut06/pr0602/files/Sin título.md",
+    "ut06/pr0602/files/views/library_libros_views.xml.md",
+    "ut06/pr0602/files/views/library_generos_views.xml.md",
+    "ut06/pr0602/files/views",
+    "ut06/pr0602/files/security",
+    "ut06/pr0602/files/models/Sin nombre",
+    "ut03/pr0303/index.md",
+    "ut02/index.md",
+    "ut06/pr0602/files/models/socios.py.md",
+    "ut06/pr0602/files/models/libros.py.md",
+    "ut06/pr0602/files/models/generos.py.md",
+    "ut06/pr0602/files/models/__init__.py.md",
+    "ut06/pr0602/files/__manifest__.py.md",
+    "ut06/pr0602/files/models",
+    "ut06/pr0602/img",
+    "ut06/pr0602/files",
+    "ut06/pr0602",
+    "ut06/pr0601/img/formulario-rellenado.png",
     "ut06/pr0601/files/views-producto.xml.md",
     "ut06/pr0601/files/views-menu.xml.md",
     "ut06/pr0601/files/models-producto.py.md",
@@ -185,39 +206,9 @@
     "files",
     "ut06/pr0601/img/Pasted image.png",
     "ut05/pr0501/index.md",
-    "ut06/pr0601/img",
-    "ut05/pr0502/index.md",
-    "ut05/index.md",
-    "ut06/pr0601/files",
-    "ut06/index.md",
-    "ut06/pr0601",
-    "pr0601/index.md",
-    "pr0601",
-    "index.md",
-    "ut06",
-    "ut05/pr0502/autor_view.md",
-    "ut05/pr0502/autor.md",
-    "ut05/pr0502/menu.md",
-    "ut05/pr0502/libro_view.md",
-    "ut05/pr0502/libro.md",
-    "ut05/pr0502/manifest.md",
-    "ut05/modulos/addons/modulo_biblioteca/views/autor_view.xml~",
-    "ut05/pr0502",
-    "ut05/modulos/addons/gestion_salas/models/models.py~",
-    "ut05/pr0501/manifest.md",
-    "ut05/modulos/addons/gestion_salas/__manifest__.py~",
-    "ut05/pr0501/ir.model.access.md",
-    "ut05/pr0501/views.md",
-    "ut05/pr0501/models.md",
     "ut05/pr0501/img/aplicaciones_instaladas.png",
     "ut05/pr0501/img/Pasted image.png",
     "ut05/pr0501/img/modulos_busqueda.png",
-    "ut05/pr0501/img/ajustes_desarrollador.png",
-    "ut05/pr0501/img/barra_busqueda.png",
-    "proyectos/proyecto_1/index.md",
-    "ut05/pr0501/img/aplicaciones.png",
-    "pr0501/index.md",
-    "ut03/pr0303/img/databaseRestored.png",
-    "ut03/pr0303/img/restoreDatabase.png"
+    "ut05/pr0501/img/ajustes_desarrollador.png"
   ]
 }
