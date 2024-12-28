@@ -1,3 +1,6 @@
+# `__manifest__.py`
+
+```python
 # -*- coding: utf-8 -*-
 {
     'name': "Stock management",
@@ -32,3 +35,4 @@
         'demo/demo.xml',
     ],
 } #type: ignore
+```

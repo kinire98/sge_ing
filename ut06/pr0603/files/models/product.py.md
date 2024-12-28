@@ -1,3 +1,7 @@
+# `models/product.py`
+
+```python
+
 # -*- coding: utf-8 -*-
 
 from odoo import models, fields, api #type: ignore
@@ -58,7 +62,7 @@ class Product(models.Model):
     @api.constrains('price', 'stock')
     def _check_total_value(self):
         for record in self:
-            if record.total_value > 100000.0:
+            if record.total_value > 100000:
                 raise ValidationError('El precio total no puede superar 100000€')
 
     @api.constrains('category')
@@ -69,3 +73,4 @@ class Product(models.Model):
                 
 
 
+```
