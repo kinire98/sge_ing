@@ -1,0 +1,51 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+    <record model="ir.ui.view" id="cpu_management.add_cpu_list">
+      <field name="name">Add CPU</field>
+      <field name="model">cpu_management.cpus</field>
+      <field name="arch" type="xml">
+        <tree editable="bottom" decoration-info="manufacturer=='AMD'">
+          <field name="name"/>
+          <field name="manufacturer"/>
+          <field name="total_cores"/>
+          <field name="p_cores"/>
+          <field name="e_cores"/>
+          <field name="base_frecuency"/>
+          <field name="max_frecuency"/>
+        </tree>
+      </field>
+    </record>
+
+    <!-- actions opening views on models -->
+    <record model="ir.actions.act_window" id="cpu_management.add_cpu_action">
+      <field name="name">cpu_management window</field>
+      <field name="res_model">cpu_management.cpus</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="cpu_management.action_server">
+      <field name="name">cpu_management server</field>
+      <field name="model_id" ref="model_cpu_management_cpu_management"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+    <menuitem name="Administración de CPUs" id="cpu_management.menu_root"/>
+    <!-- menu categories -->
+    <menuitem name="CPU" id="cpu_management.cpu" parent="cpu_management.menu_root"/>
+    <!-- actions -->
+    <menuitem name="Añadir CPU" id="cpu_management.add_cpu" parent="cpu_management.cpu"
+              action="cpu_management.add_cpu_action"/>
+  </data>
+</odoo>
