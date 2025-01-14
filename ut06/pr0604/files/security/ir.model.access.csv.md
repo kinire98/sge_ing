@@ -1,0 +1,4 @@
+```csv
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_subscription_subscription,subscription.subscription,model_subscription_subscription,base.group_user,1,1,1,1
+```

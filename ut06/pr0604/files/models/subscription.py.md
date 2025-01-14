@@ -1,3 +1,4 @@
+```python
 # -*- coding: utf-8 -*-
 import datetime
 from odoo import models, fields, api #type: ignore
@@ -40,3 +41,4 @@ class subscription(models.Model):
     def add_15_days(self):
         self.end_date = self.end_date + datetime.timedelta(days = 15);
 
+```

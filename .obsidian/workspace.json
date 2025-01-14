@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ut06/pr0603/files/models/__init__.py.md",
-                "mode": "source",
+                "file": "ut06/pr0604/index.md",
+                "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "__init__.py"
+              "title": "index"
             }
           }
         ]
@@ -164,6 +164,24 @@
   },
   "active": "bd6fc773956dbd21",
   "lastOpenFiles": [
+    "ut06/pr0604/files/models/__init__.py.md",
+    "ut06/pr0604/index.md",
+    "ut06/pr0604/files/views/usage_subscription_view.xml.md",
+    "ut06/pr0604/files/manifest.py.md",
+    "ut06/pr0604/files/views/menu.xml.md",
+    "ut06/pr0604/files/views/basic_subscription_view.xml.md",
+    "ut06/pr0604/files/security/ir.model.access.csv.md",
+    "ut06/pr0604/files/models/subscription.py.md",
+    "ut06/pr0604/files/views",
+    "ut06/pr0604/files/security",
+    "ut06/pr0604/files/models",
+    "ut06/pr0604/files",
+    "ut06/pr0604/img/use_list.png",
+    "ut06/pr0604/img/Pasted image.png",
+    "ut06/pr0604/img/basic_list.png",
+    "ut06/pr0604/img",
+    "ut06/pr0603/files/models/__init__.py.md",
+    "ut06/pr0604",
     "ut06/pr0603/files/models/product.py.md~",
     "modulos/addons/stock_management/models/product.py~",
     "ut06/pr0603/index.md~",
@@ -174,20 +192,12 @@
     "ut06/pr0603/img/less_than_three_characters.png",
     "ut06/pr0603/img/added_products.png",
     "ut06/pr0603/files/__manifest__.py.md~",
-    "ut06/pr0603/files/views/product.xml.md~",
-    "modulos/addons/stock_management/views/product.xml~",
-    "ut06/pr0603/files/views/menu.xml.md~",
-    "ut06/pr0603/files/security/ir.model.access.csv.md~",
     "ut06/pr0603/files/views/product.xml.md",
     "ut06/pr0603/files/views/menu.xml.md",
     "ut06/pr0603/files/security/ir.model.access.csv.md",
     "ut06/pr0603/files/models/product.py.md",
-    "ut06/pr0603/files/models/__init__.py.md",
     "ut06/pr0603/files/__manifest__.py.md",
     "ut06/pr0603/index.md",
-    "ut06/pr0603/files/views",
-    "ut06/pr0603/files/security",
-    "ut06/pr0603/files/models",
     "ut06/pr0602/index.md",
     "ut06/pr0602/files/__manifest__.py.md",
     "ut06/pr0601/index.md",
@@ -199,16 +209,6 @@
     "files/models/__init__.py.md",
     "ut06/index.md",
     "ut06/pr0602/img/socio.png",
-    "ut06/pr0602/img/Pasted image.png",
-    "ut06/pr0602/img/libro.png",
-    "ut06/pr0602/img/genero.png",
-    "ut06/pr0602/files/models/autores.py.md",
-    "ut06/pr0602/files/views/library_menu_views.xml.md",
-    "ut06/pr0602/files/views/library_autores_views.xml.md",
-    "ut06/pr0602/files/security/ir.model.access.csv.md",
-    "ut06/pr0602/files/views/library_socios_views.xml.md",
-    "ut06/pr0602/files/Sin título.md",
-    "ut06/pr0602/files/views/library_libros_views.xml.md",
-    "ut06/pr0602/files/views/library_generos_views.xml.md"
+    "ut06/pr0602/files/models/autores.py.md"
   ]
 }
