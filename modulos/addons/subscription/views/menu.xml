@@ -11,6 +11,8 @@
               action="subscription.action_basic_list"/>
     <menuitem name="Uso" id="subscription.menu_subscription_usage_list" parent="subscription.menu_subscription"
               action="subscription.action_usage_list"/>
+    <menuitem name="Añadir" id="subscription.menu_subscription_form" parent="subscription.menu_subscription"
+              action="subscription.action_form"/>
       
     </data>
 </odoo>

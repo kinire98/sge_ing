@@ -25,6 +25,7 @@
         'security/ir.model.access.csv',
         'views/basic_subscription_view.xml',
         'views/usage_subscription_view.xml',
+        'views/form_view.xml',
         'views/menu.xml',
     ],
     # only loaded in demonstration mode

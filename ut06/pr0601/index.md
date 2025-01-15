@@ -1,6 +1,6 @@
 # PR0601 - Exploración de campos del modelo
 ## Resultado  
-![Captura del resultado del ejercicio](./formulario-rellenado.png)
+![Captura del resultado del ejercicio](./img/formulario-rellenado.png)
 ## Código utilizado
 [`__manifest__.py`](./files/__manifest__.py.md)  
 [`models/__init__.py`](./files/models-__init__.py.md)  
