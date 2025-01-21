@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "3059430f8755b24b",
+        "id": "b6fecd95842c2264",
         "type": "tabs",
         "children": [
           {
-            "id": "bd6fc773956dbd21",
+            "id": "dff03062ecbdf48e",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ut06/pr0605/index.md",
+                "file": "ut07/pr0701/index.md",
                 "mode": "preview",
                 "source": true
               },
@@ -162,15 +162,30 @@
       "command-palette:Abrir paleta de comandos": false
     }
   },
-  "active": "bd6fc773956dbd21",
+  "active": "dff03062ecbdf48e",
   "lastOpenFiles": [
+    "ut07/pr0701/files/views/welcome_message.xml.md",
+    "ut07/pr0701/index.md",
+    "ut07/pr0701/files/views/subscription_view.xml.md",
+    "ut07/pr0701/files/__manifest__.py.md",
+    "ut06/pr0605/index.md",
+    "ut07/pr0701/files/controllers/controllers.py.md",
+    "ut07/pr0701/files/views",
+    "ut06/pr0605/files/views/form_view.xml.md",
+    "ut07/pr0701/files/controllers",
+    "ut07/pr0701/img/subscription_page.png",
+    "ut07/pr0701/img/welcome_page.png",
+    "ut07/pr0701/img/Pasted image.png",
+    "ut07/pr0701/files",
+    "ut07/pr0701/img",
+    "ut07/index.md",
+    "ut07/pr0701",
+    "ut06/index.md",
+    "ut07",
     "ut06/pr0604/index.md",
     "ut06/pr0603/index.md",
     "ut06/pr0602/index.md",
     "ut06/pr0601/index.md",
-    "ut06/pr0605/index.md",
-    "ut06/pr0605/files/views/form_view.xml.md",
-    "ut06/index.md",
     "ut06/pr0605/img/form3.png",
     "ut06/pr0605/img/Pasted image.png",
     "ut06/pr0605/img/form2.png",
@@ -186,28 +201,14 @@
     "ut06/pr0604/files/views/basic_subscription_view.xml.md",
     "ut06/pr0604/files/security/ir.model.access.csv.md",
     "ut06/pr0604/files/models/subscription.py.md",
-    "ut06/pr0604/files/views",
-    "ut06/pr0604/files/security",
-    "ut06/pr0604/files/models",
-    "ut06/pr0604/files",
     "ut06/pr0604/img/use_list.png",
     "ut06/pr0604/img/Pasted image.png",
     "ut06/pr0604/img/basic_list.png",
-    "ut06/pr0604/img",
     "ut06/pr0603/files/models/__init__.py.md",
-    "ut06/pr0604",
-    "ut06/pr0603/img/negative_stock.png",
-    "ut06/pr0603/img/Pasted image.png",
-    "ut06/pr0603/img/negative_price.png",
     "ut06/pr0603/files/views/product.xml.md",
     "ut06/pr0603/files/views/menu.xml.md",
     "ut06/pr0603/files/security/ir.model.access.csv.md",
     "ut06/pr0603/files/models/product.py.md",
-    "ut06/pr0603/files/__manifest__.py.md",
-    "ut06/pr0602/files/__manifest__.py.md",
-    "ut06/pr0601/files/views-producto.xml.md",
-    "ut06/pr0601/files/views-menu.xml.md",
-    "ut06/pr0601/files/models-producto.py.md",
-    "ut06/pr0601/files/models-__init__.py.md"
+    "ut06/pr0603/files/__manifest__.py.md"
   ]
 }

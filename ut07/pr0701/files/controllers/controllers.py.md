@@ -1,3 +1,5 @@
+# controllers/controllers.py
+```python
 # -*- coding: utf-8 -*-
 from odoo import http #type: ignore
 from odoo.http import request #type: ignore
@@ -14,3 +16,4 @@ class Subscription(http.Controller):
         return http.request.render('subscription.subscription_list', {
             'subs': subs
         })
+```

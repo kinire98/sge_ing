@@ -1,3 +1,5 @@
+# __manifest__.py
+```python
 # -*- coding: utf-8 -*-
 {
     'name': "subscription",
@@ -35,3 +37,4 @@
         'demo/demo.xml',
     ],
 } #type: ignore
+```

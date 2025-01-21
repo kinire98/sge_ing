@@ -1,3 +1,7 @@
 {
-  "accentColor": ""
+  "accentColor": "",
+  "nativeMenus": true,
+  "theme": "system",
+  "cssTheme": "",
+  "baseFontSizeAction": true
 }
