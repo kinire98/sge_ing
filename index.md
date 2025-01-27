@@ -9,6 +9,8 @@
 [Enlace a la unidad](./ut05/index.md)
 ## Unidad 6
 [Enlace a la unidad](./ut06/index.md)
+## Unidad 7
+[Enlace a la unidad](./ut07/index.md)
 
 ## Proyecto 1
 [Enlace al proyecto](./proyectos/proyecto_1/index.md)

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ut07/pr0702/index.md",
+                "file": "ut07/index.md",
                 "mode": "preview",
                 "source": true
               },
@@ -164,6 +164,9 @@
   },
   "active": "dff03062ecbdf48e",
   "lastOpenFiles": [
+    "index.md",
+    "ut07/index.md",
+    "ut07/pr0702/index.md",
     "ut07/pr0702/img/name_2.png",
     "ut07/pr0702/img/Pasted image.png",
     "ut07/pr0702/img/name_1.png",
@@ -176,7 +179,6 @@
     "ut07/pr0702/img/subs_1.png",
     "ut07/pr0702/img",
     "ut07/pr0702/files/controllers.py.md",
-    "ut07/pr0702/index.md",
     "ut07/pr0702/files",
     "ut07/pr0701/index.md",
     "ut07/pr0702",
@@ -188,10 +190,8 @@
     "ut07/pr0701/files/views",
     "ut06/pr0605/files/views/form_view.xml.md",
     "ut07/pr0701/files/controllers",
-    "ut07/pr0701/img/subscription_page.png",
     "ut07/pr0701/files",
     "ut07/pr0701/img",
-    "ut07/index.md",
     "ut07/pr0701",
     "ut06/index.md",
     "ut07",
