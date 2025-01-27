@@ -1,3 +1,5 @@
+# `controllers/controllers.py`
+```python
 # -*- coding: utf-8 -*-
 from odoo import http #type: ignore
 from odoo.http import request, Response #type: ignore
@@ -98,4 +100,4 @@ class Subscription(http.Controller):
                     content_type = 'application/json',
                     status = 500
                     )
-
+```
