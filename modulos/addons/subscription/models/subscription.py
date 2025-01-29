@@ -29,6 +29,7 @@ class subscription(models.Model):
     usage_limit = fields.Integer(string='Límite de uso')
     current_usage = fields.Integer(string='Uso actual')
     use_percent = fields.Integer(string='Porcentaje de uso', compute = '_calculate_use_percent', default=0)
+    metrics_field = fields.Many2one(comodel_name = 'subscription.metrics')
 
     @api.depends('usage_limit', 'current_usage')
     def _calculate_use_percent(self):
