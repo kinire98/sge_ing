@@ -30,14 +30,23 @@ class metrics(models.Model):
     @api.depends('renewal_fee', 'renewals', 'active_subscriptions')
     def _calculate_renewal_fee(self):
         for record in self:
+            if record.active_subscriptions == 0:
+                record.renewal_fee = 0
+                continue
             record.renewal_fee = (record.renewals / record.active_subscriptions) * 100
 
     @api.depends('cancelation_fee', 'active_subscriptions', 'canceled')
     def _caculate_cancelation_fee(self):
         for record in self:
+            if record.active_subscriptions == 0:
+                record.cancelation_fee = 0
+                continue
             record.cancelation_fee = (record.canceled / record.active_subscriptions) * 100
 
     @api.depends('average_revenue_by_user', 'revenue_generated', 'active_subscriptions')
     def _caculate_average_revenue_by_user(self):
         for record in self:
+            if record.active_subscriptions == 0:
+                record.average_revenue_by_user = 0
+                continue
             record.average_revenue_by_user = (record.revenue_generated / record.active_subscriptions)

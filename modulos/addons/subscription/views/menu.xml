@@ -6,6 +6,7 @@
     <menuitem name="Subscripciones" id="subscription.menu_root"/>
     <!-- menu categories -->
     <menuitem name="Subscripción" id="subscription.menu_subscription" parent="subscription.menu_root"/>
+    <menuitem name="Métricas" id="subscription.menu_metrics" parent="subscription.menu_root"/>
     <!-- actions -->
     <menuitem name="Básico" id="subscription.menu_subscription_basic_list" parent="subscription.menu_subscription"
               action="subscription.action_basic_list"/>
@@ -13,6 +14,8 @@
               action="subscription.action_usage_list"/>
     <menuitem name="Añadir" id="subscription.menu_subscription_form" parent="subscription.menu_subscription"
               action="subscription.action_form"/>
+    <menuitem  name="Ver" id="subscription.metric_field" parent="subscription.menu_metrics"
+      action="subscription.metrics_form"/>
       
     </data>
 </odoo>

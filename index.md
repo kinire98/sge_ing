@@ -14,3 +14,5 @@
 
 ## Proyecto 1
 [Enlace al proyecto](./proyectos/proyecto_1/index.md)
+## Proyecto 2
+[Enlace al proyecto](./proyectos/proyecto_2/index.md)

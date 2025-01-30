@@ -26,9 +26,10 @@
         'views/basic_subscription_view.xml',
         'views/usage_subscription_view.xml',
         'views/form_view.xml',
-        'views/menu.xml',
         'views/welcome_message.xml',
-        'views/subscription_view.xml'
+        'views/subscription_view.xml',
+        'views/metrics_tree.xml',
+        'views/menu.xml',
     ],
     # only loaded in demonstration mode
     'demo': [

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "ut07/index.md",
+                "file": "proyectos/proyecto_2/index.md",
                 "mode": "preview",
                 "source": true
               },
@@ -52,7 +52,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "path:\"ut06/pr0601/img/\" ",
+                "query": "path:\"proyectos/proyecto_2/\" ",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -165,7 +165,11 @@
   "active": "dff03062ecbdf48e",
   "lastOpenFiles": [
     "index.md",
+    "proyectos/proyecto_2/index.md",
+    "proyectos/proyecto_2/subscription.zip",
+    "modulos/addons/subscription.zip",
     "ut07/index.md",
+    "proyectos/proyecto_2",
     "ut07/pr0702/index.md",
     "ut07/pr0702/img/name_2.png",
     "ut07/pr0702/img/Pasted image.png",
@@ -192,14 +196,11 @@
     "ut07/pr0701/files/controllers",
     "ut07/pr0701/files",
     "ut07/pr0701/img",
-    "ut07/pr0701",
     "ut06/index.md",
-    "ut07",
     "ut06/pr0604/index.md",
     "ut06/pr0603/index.md",
     "ut06/pr0602/index.md",
     "ut06/pr0601/index.md",
-    "ut06/pr0605/img",
     "ut06/pr0604/files/models/__init__.py.md",
     "ut06/pr0604/files/views/usage_subscription_view.xml.md",
     "ut06/pr0604/files/manifest.py.md",
@@ -207,8 +208,6 @@
     "ut06/pr0604/files/views/basic_subscription_view.xml.md",
     "ut06/pr0604/files/security/ir.model.access.csv.md",
     "ut06/pr0604/files/models/subscription.py.md",
-    "ut06/pr0603/files/models/__init__.py.md",
-    "ut06/pr0603/files/views/product.xml.md",
-    "ut06/pr0603/files/views/menu.xml.md"
+    "ut06/pr0603/files/models/__init__.py.md"
   ]
 }

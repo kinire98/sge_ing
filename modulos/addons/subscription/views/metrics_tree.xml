@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+      <record id="subscription.metrics_tree" model="ir.ui.view">
+        <field name="name">Formulario de subscripción</field>
+        <field name="model">subscription.metrics</field>
+        <field name="arch" type="xml">
+          <form string="Añadir subscripción">
+            <sheet>
+              <group>
+                <!-- Add your fields here -->
+                <field name="date" string="Fecha"/>
+                <field name="active_subscriptions" string="Subscripciones activas"/>
+                <field name="revenue_generated" string="Ingresos generados"/>
+              </group>
+              <notebook>
+                <page name="data" string="Datos varios">
+                  <group>
+                    <field name="new_subscriptions" string="Nuevas subscripciones"/>
+                    <field name="canceled" string="Canceladas"/>
+                    <field name="new_clients" string="Nuevos clientes"/>
+                    <field name="recurrent_clients" string="Clientes recurrentes"/>
+                  </group>
+                </page>
+                <page string="Tasas" name="fees">
+                  <group>
+                    <field name="renewal_fee" string="Tasa de renovación"/>
+                    <field name="cancelation_fee" string="Tasa de cancelación"/>
+                    <field name="conversion_fee" string="Tasa de conversión"/>
+                    <field name="churn_rate" string="Tasa de pérdida de clientes"/>
+                  </group>
+                </page>
+                <page name="client_revenue_generation" string="Generación de ingresos de clientes">
+                  <group>
+                    <field name="lifetime_value" string="Ingresos generados"/>
+                    <field name="client_adquisition_cost" string="Coste de adquisición de clientes"/>
+                    <field name="average_revenue_by_user" string="Ingresos medios por usuario"/>
+                  </group> 
+                </page>
+                <page name="notes_and_other" string="Notas y número de subscripciones">
+                  <group>
+                    <field name="notes" string="Notas"/>
+                    <field name="relation_with_model"
+                      string="Subscripciones"/>
+                  </group>
+                </page>
+              </notebook>
+            </sheet>
+            
+          </form>
+        </field>
+      </record>
+
+      <record model="ir.actions.act_window" id="subscription.metrics_form">
+        <field name="name">Formulario de subscripción</field>
+        <field name="res_model">subscription.metrics</field>
+        <field name="view_mode">tree,form</field>
+        <field name="view_id" ref="subscription.metrics_tree"/>
+      </record>
+      
+    </data> 
+</odoo>
